@@ -6,7 +6,7 @@
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/3/w3.css">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/3/w3.js">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<title>Log In</title>
+<title>Área do Atleta</title>
 <style>
 body {
     background: whitesmoke;
@@ -28,7 +28,7 @@ label {
 
 }
 
-input[type=tel], select {
+input[type=cel], select {
     width: 35%;
     padding: 12px 15px;
     margin: 1px 0;
@@ -38,7 +38,7 @@ input[type=tel], select {
     box-sizing: border-box;
 }
 
-input[type=email], select {
+input[type=e-mail], select {
     width: 35%;
     padding: 12px 15px;
     margin: 0px 0;
@@ -47,15 +47,7 @@ input[type=email], select {
     border-radius: 4px;
     box-sizing: border-box;
 }
-input[type=date], select {
-    width: 35%;
-    padding: 12px 15px;
-    margin: 0px 0;
-    display: inline-block;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    box-sizing: border-box;
-}
+
 input[type=msg], select {
     width: 35%;
     padding: 12px 15px;
@@ -137,61 +129,28 @@ h3 {
     font-size: 45px;
 }
 
-.login {
+.atleta {
     background-color: rgb(28, 117, 28);
     color: #111
 }
 
 </style>
-<script>
-    function validateForm() {
-    var name = document.forms["myForm"]["fullName"].value;
-    if (name == "") {
-        alert("Nome - Campo Obrigatório");
-        return false;
-    
-    var mail = document.forms["myForm"]["E-mail"].value;
-    if (mail == "") 
-    else if (mail / "teste@este.com"){
-        alert("E-mail - Campo Obrigatório");
-        return false;
-    }
-}
-
-</script>
 <body>
 <ul>
-    <li><a href="C:\Argon\AnalDesvSist\Makawe\1-home_inicio.html"><i class="fa fa-fw fa-home" style='font-size:24px'></i></a></li>
-    <li><a href="C:\Argon\AnalDesvSist\Makawe\2-treinos.html">Treinos</a></li>
-    <li><a href="C:\Argon\AnalDesvSist\Makawe\3-personal.html">Personal</a></li>
-    <li><a href="C:\Argon\AnalDesvSist\Makawe\4-vias_classicas.html">Vias Clássicas</a></li>
-    <li><a href="C:\Argon\AnalDesvSist\Makawe\5-area_atleta.html">Área do Atleta</a></li>
-    <li><a href="C:\Argon\AnalDesvSist\Makawe\6-cadastro_atleta.html" class="active"><i class="fa fa-fw fa-user"></i>Log In</a></li>
+    <li><a href="../index.html"><i class="fa fa-fw fa-home" style='font-size:24px'></i></a></li>
+    <li><a href="../treinos/index.html">Treinos</a></li>
+    <li><a href="../personal/index.html">Personal</a></li>
+    <li><a href="../vias.classicas/index.html">Vias Clássicas</a></li>
+    <li><a href="#" class="active">Área do Atleta</a></li>
+    <li><a href="../casdastro/index.html"><i class="fa fa-fw fa-user"></i>Log In</a></li>
 </ul>
 
-<center><h3 type="title" id="title">Log In</h3></center>
+<center><h3 type="title" id="title">Área do Atleta</h3></center>
 
 <div>
-  <form name="myForm" onsubmit="return validateForm()" method="post">
-    <center>
-        <label>Nome</label>
-    <p><input type="text" id="fullName" name="Nome Completo" placeholder="nome completo">
-    
-    <p><label>Telefone</label>
-        <p><input type="tel" id="phone" name="phone" placeholder="(xx) xxxxx-xxxx">
+  
 
-    <p><label>Data de Nascimento</label>
-        <p><input type="date" id="date" name="date" placeholder="xx/xx/xxxx">
-    
-    <p><label>E-mail</label>
-        <p><input type="email" id="email" name="E-mail" placeholder="nome@email.com">
-    
-    <p><label>Ginásio</label>
-        <p><input type="msg" id="theMsg" name="Ginásio" placeholder="onde você treina?">
 
-    <p><input type="submit" value="Submit">
-    </center>
-  </form>
 </div>
 <address>
         Written by Thiago Honorio Rosa<br>
